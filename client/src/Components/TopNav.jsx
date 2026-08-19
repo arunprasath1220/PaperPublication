@@ -2,7 +2,7 @@ import React from 'react';
 
 const TopNav = () => {
   return (
-    <div className="bg-ijmems-blue text-white flex justify-between items-center px-[110px] text-sm font-sans h-[72px] w-full">
+    <div className="bg-ijmems-blue text-white flex justify-between items-center px-[110px] text-base font-sans h-[72px] w-full">
       <div className="flex items-center">
         <button className="bg-transparent border border-white text-white py-1.5 px-4 rounded hover:bg-white/10 transition-colors">
           Submit your paper
