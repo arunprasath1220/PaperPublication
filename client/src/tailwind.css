@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ijmems-blue: #045485;
+  --color-ijmems-lightBlue: #48acea;
+  --color-ijmems-darkText: #333333;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #333333;
+}
