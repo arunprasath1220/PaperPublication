@@ -10,12 +10,12 @@ import Volumes from './Pages/Volumes';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen flex flex-col bg-white">
         <TopNav />
         <Header />
         <NavBar />
         
-        <main>
+        <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/volumes" element={<Volumes />} />
