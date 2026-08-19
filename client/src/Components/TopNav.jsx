@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const TopNav = () => {
   return (
@@ -6,9 +7,12 @@ const TopNav = () => {
       <div className="w-full flex flex-col lg:flex-row justify-between items-center px-4 sm:px-8 lg:px-[110px] py-3 lg:py-0 lg:h-[72px] gap-3 lg:gap-0 text-xs sm:text-sm lg:text-base font-sans">
         {/* Left Side: Submit Button */}
         <div className="flex items-center w-full lg:w-auto justify-between lg:justify-start">
-          <button className="bg-transparent border border-white text-white py-1.5 px-4 rounded text-xs sm:text-sm font-medium hover:bg-white/10 active:scale-95 transition-all shadow-sm cursor-pointer">
+          <Link 
+            to="/submit-paper"
+            className="inline-block bg-transparent border border-white text-white py-1.5 px-4 rounded text-xs sm:text-sm font-medium hover:bg-white/10 active:scale-95 transition-all shadow-sm cursor-pointer"
+          >
             Submit your paper
-          </button>
+          </Link>
 
           {/* Social Icons for Mobile */}
           <div className="flex lg:hidden items-center gap-3">
@@ -43,11 +47,11 @@ const TopNav = () => {
 
           {/* Quick links */}
           <nav className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-xs sm:text-sm lg:text-base">
-            <a href="#" className="text-white hover:underline transition-colors py-0.5">Reviewers</a>
-            <a href="#" className="text-white hover:underline transition-colors py-0.5">Publication Fee</a>
-            <a href="#" className="text-white hover:underline transition-colors py-0.5">Contact Us</a>
-            <a href="#" className="text-white hover:underline transition-colors py-0.5">Publisher</a>
-            <a href="#" className="text-white hover:underline transition-colors py-0.5">PMSL</a>
+            <Link to="/reviewers" className="text-white hover:underline transition-colors py-0.5">Reviewers</Link>
+            <Link to="/publication-fee" className="text-white hover:underline transition-colors py-0.5">Publication Fee</Link>
+            <Link to="/contact-us" className="text-white hover:underline transition-colors py-0.5">Contact Us</Link>
+            <Link to="/publisher" className="text-white hover:underline transition-colors py-0.5">Publisher</Link>
+            <Link to="/pmsl" className="text-white hover:underline transition-colors py-0.5">PMSL</Link>
           </nav>
         </div>
       </div>
